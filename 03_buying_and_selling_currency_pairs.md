@@ -65,6 +65,12 @@
 <ul>
 <li>they do not include the U.S. dollar</li>
 <li>they are not as frequently traded as the majors but they are still pretty liquid and provide plenty trading opportunities</li>
+<li>e.g. EUR/GBP =&gt; it’s actually two USD trades
+<ul>
+<li>it is equivalent to buying a EUR/USD and selling a GBP/USD pair, because trades are often priced and settled through USD pairs behind the scenes</li>
+<li>because of this, cross-currency pairs frequently carry a higher transaction cost</li>
+</ul>
+</li>
 </ul>
 <p><code>Euro crosses</code></p>
 
