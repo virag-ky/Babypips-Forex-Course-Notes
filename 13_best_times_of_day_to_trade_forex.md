@@ -37,4 +37,11 @@
 <li><mark><strong>Currency fixing</strong></mark> =&gt; a set time each day when the prices of currencies for commercial transactions are set or fixed</li>
 <li>since currency prices fluctuates every second, a daily “reference point” is needed</li>
 </ul>
+<h3 id="who-fixes-the-currency-rate">Who “fixes” the currency rate?</h3>
+<p><strong>Large commercial banks</strong> (often called “super banks”) are the primary participants whose trades and quotes determine the fix. <strong>Central banks</strong> do <strong>not</strong> set or directly participate in this fixing process.</p>
+<ul>
+<li>The fix is calculated and published by <strong>Refinitiv</strong>, based on actual market transactions and quotes around 4:00 p.m. London time (the close of the main London trading session).</li>
+<li>It uses a <strong>median</strong> of bid and offer rates sampled over a short window (typically 1 minute before to 1 minute after 4 p.m. for most currencies; even tighter for some like EUR, JPY, CHF sourced from platforms like EBS).</li>
+<li>This creates a transparent, representative “snapshot” rate from real trading activity in the vast over-the-counter (OTC) FX market.</li>
+</ul>
 
