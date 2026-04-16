@@ -9,12 +9,26 @@
 <ul>
 <li>e.g. 1.15382
 <ul>
-<li>1 (first) =&gt; 10,000 pips</li>
-<li>1 (second) =&gt; 1000 pips</li>
-<li>5 =&gt; 500 pips</li>
-<li>3 =&gt; 30 pips</li>
-<li>8 =&gt; 8 pips</li>
-<li>2 =&gt; 0.2 pips</li>
+<li>1 (first) -&gt; 10,000 pips</li>
+<li>1 (second) -&gt; 1000 pips</li>
+<li>5 -&gt; 500 pips</li>
+<li>3 -&gt; 30 pips</li>
+<li>8 -&gt; 8 pips</li>
+<li>2 -&gt; 0.2 pips</li>
+</ul>
+</li>
+<li>non-JPY pairs -&gt; 1.0952
+<ul>
+<li>9 -&gt; 100s</li>
+<li>5 -&gt; 10s</li>
+<li>2 -&gt;1s</li>
+</ul>
+</li>
+<li>JPY pairs -&gt; 110.82
+<ul>
+<li>0 -&gt; 100s</li>
+<li>8 -&gt; 10s</li>
+<li>2 -&gt; 1s</li>
 </ul>
 </li>
 </ul>
@@ -35,6 +49,14 @@
 <li><strong>Pip value</strong> = How much your account currency changes for a 1-pip move in the pair.</li>
 <li>The initial pip movement always affects the <strong>quote currency</strong> (the second currency in the pair).</li>
 <li>Then you convert to your <strong>account currency</strong> if needed.</li>
+<li>standard lot =&gt; $10</li>
+<li>mini lot =&gt; $1</li>
+<li>micro lot =&gt; 10 cent
+<ul>
+<li>these values are for generalization, it’s for every pair that contains USD</li>
+<li>other pairs have similar value, different but not too much difference</li>
+</ul>
+</li>
 </ul>
 <h3 id="case-1-account-currency--quote-currency-of-the-pair">Case 1: Account Currency = Quote Currency of the Pair</h3>
 <p>(Example: <strong>USD account</strong> trading <strong>EUR/USD</strong> — USD is the quote currency)</p>
@@ -64,4 +86,15 @@
 <li>Calculate pip value in the pair’s quote currency (USD) first → $1 per mini lot.</li>
 <li>Convert that USD amount to CAD using the current USD/CAD rate. Example: If USD/CAD = 1.3500, then 1 USD pip value becomes 1 × 1.3500 = <strong>1.35 CAD</strong> per pip.</li>
 </ol>
+<h2 id="useful-example">Useful example:</h2>
+<ul>
+<li>EUR/USD -&gt; 1.0802</li>
+<li>we buy 1 standard lot</li>
+<li>the price went to 1.0902 (100 pips)</li>
+<li>calculation: 100 pips x $10 x 1 standard lot = $1000</li>
+<li>so basically we bought 100,000 units of EUR</li>
+<li>the broker charges us 108,020 dollars</li>
+<li>while we are holding the 100,000 euros, the price moved up 100 pips</li>
+<li>108,020 -&gt; 109,020 =&gt; since we only owe 108,020 to the broker, we can sell now and make $1000</li>
+</ul>
 
